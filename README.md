@@ -1,24 +1,44 @@
-# README
+# Customer Relation Manager
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This repo is to build a simple CRM with active admin in RoR application. Following are structure of this application:
 
-Things you may want to cover:
+### Customer model
 
-* Ruby version
+- Full name (string)
+- Phone number (string)
+- Email Address (string)
+- Image (string)
+- Notes (text)
 
-* System dependencies
+### Customers controller
 
-* Configuration
+- index (display all the customers.)
+- alphabetized (find all customers, ordered by name.)
+- missing_email (find all customers that are missing email addresses.)
 
-* Database creation
+### Customers views
 
-* Database initialization
+- \_customer.html.erb (partial for displaying customer info)
+- alphabetized.html.erb (route: /customers/alphabetized)
+- index.html.erb (root route: /)
+- missing_email.html.erb (route: /customers/missing_email)
 
-* How to run the test suite
+## Admin Dashboard
 
-* Services (job queues, cache servers, search engines, etc.)
+![Admin Dashboard](/app/assets/images/admin1.jpg)
 
-* Deployment instructions
+## Admins Dashboard - 2
 
-* ...
+![Admin Dashboard](/app/assets/images/admin2.jpg)
+
+## Root route, /
+
+![Admin Dashboard](/app/assets/images/index.jpg)
+
+## /customers/alphabetized
+
+![Admin Dashboard](/app/assets/images/alphabetized.jpg)
+
+## /customers/missing_email
+
+![Admin Dashboard](/app/assets/images/email.jpg)
